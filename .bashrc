@@ -1,14 +1,14 @@
+# Prompt stuff
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+export PS1="\[$txtgrn\]\u@\h \[$txtylw\]\$PWD \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\n\$ "
+
 if [ -f ~/.bashrc_local ]; then
    source ~/.bashrc_local
 fi
 
 # Add user-specific bin folder to path
 export PATH="$HOME/bin:$PATH"
-
-# Prompt stuff
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source "${GITAWAREPROMPT}/main.sh"
-export PS1="\[$txtgrn\]\u@\h \[$txtylw\]\$PWD \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\n\$ "
 
 # VIM
 export EDITOR=vim
