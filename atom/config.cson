@@ -1,0 +1,51 @@
+"*":
+  "atom-package-deps":
+    ignored: []
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    includeCompletionsFromAllBuffers: false
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "background-tips"
+      "autosave"
+      "tabs-to-spaces"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "bookmarks"
+      "linter"
+    ]
+    telemetryConsent: "no"
+  editor:
+    confirmCheckoutHeadRevision: false
+    invisibles: {}
+    preferredLineLength: 120
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "6676fb12-6444-6a31-f24c-7d6b794e200c"
+  github:
+    graphicalConflictResolution: false
+  "line-ending-selector": {}
+  linter:
+    lintOnChange: false
+  "linter-rubocop": {}
+  "linter-ui-default":
+    showPanel: true
+  minimap: {}
+  "project-manager":
+    includeGitRepositories: true
+  "split-diff": {}
+  "tabs-to-spaces": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
