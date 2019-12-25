@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+from random import randint
+
+loot = [
+  "Handaxe blade",
+  "Dented metal helm",
+  "Moldy and stinky wheel of cheese",
+  "Giant-sized shabby cloak",
+  "Giant-sized bone comb",
+  "Iron cooking pot",
+  "Giant-sized drinking horn",
+  "Blood and hair smeared longsword",
+  "Haunch of meat",
+  "Mangy fur pelt",
+  "Small bag of salt",
+  "Giant-sized pair of old sandals",
+  "Giant-sized waterskin",
+  "Cask of ale",
+  "Giant-sized necklace of bones (hill), stone beads (stone), dragon fangs (frost), iron ingots (fire), feathers (cloud), or starfish (storm)",
+  "1d6 dead trout",
+  "Dented steel shield",
+  "Wooden oar",
+  "Empty wooden barrel",
+  "30ft hempen rope tied to a wooden bucket",
+  "Bundled up tent",
+  "Riding saddle",
+  "Stuffed animal",
+  "Live animal (chicken, goat, pig, or sheep)",
+  "1d6 moldy loaves of bread",
+  "6ft long wooden fence post",
+  "Wooden door with twisted iron hinges",
+  "Empty wooden chest (unlocked)",
+  "Rocking chair",
+  "Painted rocking horse",
+  "1d6 dragon scales",
+  "Carved stone statue of a dwarf",
+  "Wooden mannequin",
+  "Coffin",
+  "Cauldron",
+  "Giant-sized smoking pipe",
+  "Bronze gong",
+  "Iron bell",
+  "Beehive",
+  "Giant-sized drum",
+  "Carved wooden statue of an elf",
+  "Uprooted berry bush",
+  "10ft hempen rope tied to rowboat anchor",
+  "Wagon wheel",
+  "Tombstone"
+]
+
+roll = randint(0, len(loot) - 1)
+
+print loot[roll]

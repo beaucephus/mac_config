@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup >/dev/null 2>&1 python2 ~/Applications/zim-0.69/./zim.py ~/dnd/drew_tomb_of_annihilation &

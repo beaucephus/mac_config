@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+import argparse
+from random import randint
+
+
+def unaccepted_dice_string(string):
+    msg = "%r is not an accepted roll" % string
+    raise argparse.ArgumentTypeError(msg)
+
+
+def dice_string(string):
+    array = string.split("d")
+    valid = True
+    if len(array) != 2:
+        unaccepted_dice_string(string)
+
+    try:
+        for a in array:
+            if int(a) <= 0:
+                unaccepted_dice_string(string)
+
+    except ValueError:
+        unaccepted_dice_string(string)
+
+    return string
+
+
+parser = argparse.ArgumentParser(description="Roll some dice.")
+parser.add_argument("dice", metavar="Dice", type=dice_string,
+                    help="Which dice and how many to roll: 1d20 or 8d6.")
+
+args_a = parser.parse_args().dice.split("d")
+num_rolls = int(args_a[0])
+sides = int(args_a[1])
+
+sum = 0
+rolls = []
+for i in range(num_rolls):
+    roll = randint(1, sides)
+    rolls.append(roll)
+    sum += roll
+
+print sum
+print rolls
