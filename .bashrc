@@ -2,6 +2,9 @@ if [ -f ~/.bashrc_local ]; then
    source ~/.bashrc_local
 fi
 
+# Add user-specific bin folder to path
+export PATH="$HOME/bin:$PATH"
+
 # Prompt stuff
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
