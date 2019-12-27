@@ -41,6 +41,9 @@
   minimap: {}
   "project-manager":
     includeGitRepositories: true
+  "project-viewer":
+    disclaimer:
+      v140: false
   "split-diff": {}
   "tabs-to-spaces": {}
   "tree-view": {}
