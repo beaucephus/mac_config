@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup >/dev/null 2>&1 python2 ~/Applications/zim-0.69/./zim.py ~/dnd/skt &
+nohup >/dev/null 2>&1 python2 ~/Applications/zim-0.69/./zim.py ~/gdrive/dnd/skt &
