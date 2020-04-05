@@ -35,6 +35,10 @@
   "line-ending-selector": {}
   linter:
     lintOnChange: false
+  "linter-eslint":
+    autofix:
+      fixOnSave: true
+    lintHtmlFiles: true
   "linter-rubocop": {}
   "linter-ui-default":
     showPanel: true
